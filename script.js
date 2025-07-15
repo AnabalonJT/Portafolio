@@ -59,10 +59,38 @@ document.getElementById('en-flag').addEventListener('click', () => setLanguage('
 // Set default language
 setLanguage('en');
 
-// Dummy contact form handler
+// Contact form handler with Formspree
 const form = document.getElementById('contact-form');
+const formStatus = document.getElementById('form-status');
+
 form.addEventListener('submit', function(e) {
   e.preventDefault();
-  document.getElementById('form-status').textContent = 'Message sent! (Demo placeholder)';
-  form.reset();
+  
+  const formData = new FormData(form);
+  const currentLang = document.documentElement.lang;
+  
+  formStatus.textContent = currentLang === 'es' ? 'Enviando...' : 'Sending...';
+  
+  fetch(form.action, {
+    method: 'POST',
+    body: formData,
+    headers: {
+      'Accept': 'application/json'
+    }
+  }).then(response => {
+    if (response.ok) {
+      formStatus.textContent = currentLang === 'es' ? '¡Mensaje enviado!' : 'Message sent!';
+      form.reset();
+    } else {
+      response.json().then(data => {
+        if (Object.hasOwn(data, 'errors')) {
+          formStatus.textContent = data['errors'].map(error => error['message']).join(', ');
+        } else {
+          formStatus.textContent = currentLang === 'es' ? 'Oops! Hubo un error al enviar el mensaje' : 'Oops! There was an error sending your message';
+        }
+      });
+    }
+  }).catch(error => {
+    formStatus.textContent = currentLang === 'es' ? 'Oops! Hubo un error al enviar el mensaje' : 'Oops! There was an error sending your message';
+  });
 });
