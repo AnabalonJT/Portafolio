@@ -40,25 +40,28 @@ const translations = {
 function setLanguage(newLang) {
   currentLang = newLang;
   document.documentElement.lang = newLang;
+  
+  // Translate main elements
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
-    if (translations[lang][key]) {
+    if (translations[newLang][key]) {
       // If the element is an input or textarea, set placeholder
       if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-        el.setAttribute('placeholder', translations[lang][key]);
+        el.setAttribute('placeholder', translations[newLang][key]);
       } else {
-        el.textContent = translations[lang][key];
+        el.textContent = translations[newLang][key];
       }
     }
   });
-}
-  // Also translate project descriptions inside .desc
+
+  // Translate project descriptions
   document.querySelectorAll('[data-i18n-desc]').forEach(el => {
     const key = el.getAttribute('data-i18n-desc');
-    if (translations[currentLang][key]) {
-      el.textContent = translations[currentLang][key];
+    if (translations[newLang][key]) {
+      el.textContent = translations[newLang][key];
     }
   });
+}
 
 // Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', () => {
