@@ -1,3 +1,6 @@
+// Debug loading
+console.log('Script loaded successfully');
+
 // Language translations
 const translations = {
   en: {
@@ -53,8 +56,26 @@ function setLanguage(lang) {
     }
   });
 
-document.getElementById('es-flag').addEventListener('click', () => setLanguage('es'));
-document.getElementById('en-flag').addEventListener('click', () => setLanguage('en'));
+// Wait for DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('DOM loaded');
+    const esFlag = document.getElementById('es-flag');
+    const enFlag = document.getElementById('en-flag');
+    
+    if (esFlag && enFlag) {
+        console.log('Language flags found');
+        esFlag.addEventListener('click', () => {
+            console.log('Switching to Spanish');
+            setLanguage('es');
+        });
+        enFlag.addEventListener('click', () => {
+            console.log('Switching to English');
+            setLanguage('en');
+        });
+    } else {
+        console.error('Language flags not found');
+    }
+});
 
 // Set default language
 setLanguage('en');
