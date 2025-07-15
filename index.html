@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>José Tomás Anabalón Díaz | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <div class="logo">JT Anabalón</div>
+    <ul class="nav-links">
+      <li><a href="#webapps" data-i18n="webapps">Web Applications</a></li>
+      <li><a href="#ai" data-i18n="ai">AI</a></li>
+      <li><a href="#contact" data-i18n="contact">Contact</a></li>
+    </ul>
+    <div class="lang-switch">
+      <img src="https://flagcdn.com/w20/cl.png" alt="Español" id="es-flag" class="flag" />
+      <img src="https://flagcdn.com/w20/us.png" alt="English" id="en-flag" class="flag" />
+    </div>
+  </nav>
+  <header>
+    <div class="about">
+      <img src="profile-placeholder.png" alt="Profile" class="profile-pic" />
+      <div>
+        <h1 data-i18n="name">José Tomás Anabalón Díaz</h1>
+        <p data-i18n="about">Ingeniero en ciencias de la computación. Apasionado por la inteligencia artificial y el desarrollo de software, con experiencia en modelos generativos, desarrollo full stack y análisis de datos.</p>
+        <div class="social-links">
+          <a href="https://github.com/AnabalonJT" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/jose-tomas-anabalon-diaz-57449a310/" target="_blank">LinkedIn</a>
+          <a href="mailto:jtanabalon@gmail.com">Email</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="webapps">
+      <h2 data-i18n="webapps">Web Applications</h2>
+      <div class="projects">
+        <div class="project">
+          <div class="media-placeholder">[Video: mtco.cl landing page]</div>
+          <div class="desc">
+            <h3>mtco.cl Tattoo Studio</h3>
+            <p data-i18n-desc="mtco_desc">Landing page and contact form with email notifications. Hosted on Hostinger.</p>
+          </div>
+        </div>
+        <div class="project">
+          <div class="media-placeholder">[Screenshot: E-commerce demo]</div>
+          <div class="desc">
+            <h3>E-commerce Demo</h3>
+            <p data-i18n-desc="ecom_desc">Demo e-commerce built with WordPress and Hostinger.</p>
+          </div>
+        </div>
+        <div class="project">
+          <div class="media-placeholder">[Screenshot: Patient management app]</div>
+          <div class="desc">
+            <h3>Patient Management App</h3>
+            <p data-i18n-desc="patient_desc">App for tracking patients and activities. Custom dashboard and tracking features.</p>
+          </div>
+        </div>
+        <div class="project">
+          <div class="media-placeholder">[Screenshot: Gardener management app]</div>
+          <div class="desc">
+            <h3>Gardener Management App</h3>
+            <p data-i18n-desc="gardener_desc">Task assignment, image uploads, and PDF generation for client reports.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="ai">
+      <h2 data-i18n="ai">AI</h2>
+      <div class="ai-project">
+        <div class="media-placeholder">[Image: Sketch-to-dress example]</div>
+        <div class="desc">
+          <h3 data-i18n="thesis-title">Thesis: Sketch-to-Dress with Generative Models</h3>
+          <p data-i18n="thesis-desc">Comparison of Pix2Pix, CycleGAN, ControlNet, BBDM, DDIM, and VQGan for translating sketches to real dresses. Metrics: FID, LPIPS, SSIM.</p>
+          <div class="media-placeholder">[Chart: Model metrics]</div>
+          <a href="ing_dissertation_file.file.94510f77f6af5cd8.6d656d6f7269612e706466.pdf" target="_blank" data-i18n="thesis-link">View Thesis (PDF)</a>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h2 data-i18n="contact">Contact</h2>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Name" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <textarea name="message" placeholder="Message" required></textarea>
+        <button type="submit" data-i18n="send">Send</button>
+      </form>
+      <div id="form-status"></div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 José Tomás Anabalón Díaz</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
