@@ -2,10 +2,14 @@
 console.log('Script loaded successfully');
 
 // Language translations
-let currentLang = 'en'; // Default language
+let currentLang = 'es'; // Default language
 
 const translations = {
   en: {
+    mtco_title: "mtco.cl Tattoo Studio",
+    ecom_title: "E-commerce Demo",
+    patient_title: "Patient Management App",
+    gardener_title: "Gardener Management App",
     webapps: "Web Applications",
     ai: "AI",
     contact: "Contact",
@@ -21,6 +25,10 @@ const translations = {
     send: "Send"
   },
   es: {
+    mtco_title: "Estudio de Tatuajes mtco.cl",
+    ecom_title: "Demo E-commerce",
+    patient_title: "App de Gestión de Pacientes",
+    gardener_title: "App de Gestión de Jardineros",
     webapps: "Aplicaciones Web",
     ai: "IA",
     contact: "Contacto",
@@ -85,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Set default language
-setLanguage('en');
+setLanguage('es');
 
 // Contact form handler with Formspree
 const form = document.getElementById('contact-form');
