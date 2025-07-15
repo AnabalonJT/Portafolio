@@ -2,6 +2,8 @@
 console.log('Script loaded successfully');
 
 // Language translations
+let currentLang = 'en'; // Default language
+
 const translations = {
   en: {
     webapps: "Web Applications",
@@ -35,7 +37,9 @@ const translations = {
   }
 };
 
-function setLanguage(lang) {
+function setLanguage(newLang) {
+  currentLang = newLang;
+  document.documentElement.lang = newLang;
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
     if (translations[lang][key]) {
@@ -49,10 +53,10 @@ function setLanguage(lang) {
   });
 }
   // Also translate project descriptions inside .desc
-  document.querySelectorAll('.desc [data-i18n-desc]').forEach(el => {
+  document.querySelectorAll('[data-i18n-desc]').forEach(el => {
     const key = el.getAttribute('data-i18n-desc');
-    if (translations[lang][key]) {
-      el.textContent = translations[lang][key];
+    if (translations[currentLang][key]) {
+      el.textContent = translations[currentLang][key];
     }
   });
 
