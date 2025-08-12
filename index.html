@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>José Tomás Anabalón Díaz | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <nav>
     <div class="logo">JT Anabalón</div>
@@ -21,10 +23,11 @@
   </nav>
   <header>
     <div class="about">
-      <img src="images/profile.jpg" alt="Profile" class="profile-pic" />
+      <img src="images/IMG_0485.jpg" alt="Profile" class="profile-pic" />
       <div>
         <h1 data-i18n="name">José Tomás Anabalón Díaz</h1>
-        <p data-i18n="about">Ingeniero en ciencias de la computación. Apasionado por la inteligencia artificial y el desarrollo de software, con experiencia en modelos generativos, desarrollo full stack y análisis de datos.</p>
+        <p data-i18n="about">Ingeniero en ciencias de la computación. Apasionado por la inteligencia artificial y el
+          desarrollo de software, con experiencia en modelos generativos, desarrollo full stack y análisis de datos.</p>
         <div class="social-links">
           <a href="https://github.com/AnabalonJT" target="_blank">GitHub</a>
           <a href="https://www.linkedin.com/in/jose-tomas-anabalon-diaz-57449a310/" target="_blank">LinkedIn</a>
@@ -38,31 +41,95 @@
       <h2 data-i18n="webapps">Aplicaciones Web</h2>
       <div class="projects">
         <div class="project">
-          <div class="media-placeholder">[Video: mtco.cl landing page]</div>
+          <div id="carousel-mtco" class="media-placeholder">[Video: mtco.cl landing page]</div>
           <div class="desc">
             <h3 data-i18n="mtco_title">Estudio de Tatuajes mtco.cl</h3>
-            <p data-i18n-desc="mtco_desc">Landing page y formulario de contacto con notificaciones por correo. Hospedado en Hostinger.</p>
+            <p class="project-description" data-i18n-desc="mtco_desc">Landing page profesional para estudio de tatuajes
+              desarrollada con HTML, CSS y JavaScript, hospedada en Hostinger. Incluye diseño responsivo, funcionalidad
+              de formulario de contacto y optimización SEO.</p>
+            <div class="project-details">
+              <div class="detail-section">
+                <p class="detail-label" data-i18n-tech="mtco_technologies">Tecnologías: HTML5, CSS3, JavaScript,
+                  Hostinger</p>
+              </div>
+              <div class="detail-section">
+                <p class="detail-label" data-i18n-scope="mtco_scope">Alcance: Sitio web completo con funcionalidad de
+                  formulario de contacto</p>
+              </div>
+              <div class="detail-section">
+                <p class="detail-label" data-i18n-features="mtco_features">Características: Diseño responsivo,
+                  Formulario de contacto, Optimización SEO, Hospedaje en Hostinger</p>
+              </div>
+            </div>
           </div>
         </div>
         <div class="project">
-          <div class="media-placeholder">[Screenshot: E-commerce demo]</div>
+          <div id="carousel-ecommerce" class="media-placeholder">[Screenshot: E-commerce demo]</div>
           <div class="desc">
             <h3 data-i18n="ecom_title">Demo E-commerce</h3>
-            <p data-i18n-desc="ecom_desc">Demo de e-commerce hecho con WordPress y Hostinger.</p>
+            <p class="project-description" data-i18n-desc="ecom_desc">Tienda en línea completa desarrollada con
+              WordPress WooCommerce en Hostinger. Incluye catálogo de productos, carrito de compras, gestión de pedidos
+              y panel administrativo.</p>
+            <div class="project-details">
+              <div class="detail-section">
+                <p class="detail-label" data-i18n-tech="ecom_technologies">Tecnologías: WordPress, WooCommerce, PHP,
+                  MySQL, Hostinger</p>
+              </div>
+              <div class="detail-section">
+                <p class="detail-label" data-i18n-scope="ecom_scope">Alcance: Tienda en línea completa con gestión de
+                  productos</p>
+              </div>
+              <div class="detail-section">
+                <p class="detail-label" data-i18n-features="ecom_features">Características: Catálogo de productos,
+                  Carrito de compras, Gestión de pedidos, Panel administrativo, Páginas informativas</p>
+              </div>
+            </div>
           </div>
         </div>
         <div class="project">
-          <div class="media-placeholder">[Screenshot: Patient management app]</div>
+          <div id="carousel-makimotion" class="media-placeholder">[Screenshot: Patient management app]</div>
           <div class="desc">
-            <h3 data-i18n="patient_title">App de Gestión de Pacientes</h3>
-            <p data-i18n-desc="patient_desc">App para seguimiento de pacientes y actividades. Dashboard personalizado y funciones de seguimiento.</p>
+            <h3 data-i18n="patient_title">App de Gestión de Pacientes - MakiMotion</h3>
+            <p class="project-description" data-i18n-desc="patient_desc">Aplicación Django para gestión de pacientes
+              médicos con resúmenes de citas y acceso fácil a información de pacientes. Dashboard personalizado con
+              funciones de seguimiento.</p>
+            <div class="project-details">
+              <div class="detail-section">
+                <p class="detail-label" data-i18n-tech="patient_technologies">Tecnologías: Django, Python, HTML5, CSS3,
+                  JavaScript, SQLite</p>
+              </div>
+              <div class="detail-section">
+                <p class="detail-label" data-i18n-scope="patient_scope">Alcance: Aplicación web para gestión de
+                  pacientes médicos</p>
+              </div>
+              <div class="detail-section">
+                <p class="detail-label" data-i18n-features="patient_features">Características: Dashboard personalizado,
+                  Gestión de citas, Resúmenes de pacientes, Acceso rápido a información médica</p>
+              </div>
+            </div>
           </div>
         </div>
         <div class="project">
-          <div class="media-placeholder">[Screenshot: Gardener management app]</div>
+          <div id="carousel-gestiontareas" class="media-placeholder">[Screenshot: Gardener management app]</div>
           <div class="desc">
-            <h3 data-i18n="gardener_title">App de Gestión de Jardineros</h3>
-            <p data-i18n-desc="gardener_desc">Asignación de tareas, carga de imágenes y generación de PDF para reportes a clientes.</p>
+            <h3 data-i18n="gardener_title">App de Gestión de Tareas</h3>
+            <p class="project-description" data-i18n-desc="gardener_desc">Aplicación Ruby on Rails para organizar
+              jardineros y clientes con sistema de materiales, comentarios en tareas y gestión de usuarios. Incluye
+              generación de reportes PDF y carga de imágenes.</p>
+            <div class="project-details">
+              <div class="detail-section">
+                <p class="detail-label" data-i18n-tech="gardener_technologies">Tecnologías: Ruby on Rails, Ruby, HTML5,
+                  CSS3, JavaScript, PostgreSQL</p>
+              </div>
+              <div class="detail-section">
+                <p class="detail-label" data-i18n-scope="gardener_scope">Alcance: Sistema de gestión para jardineros y
+                  clientes</p>
+              </div>
+              <div class="detail-section">
+                <p class="detail-label" data-i18n-features="gardener_features">Características: Gestión de usuarios,
+                  Sistema de materiales, Comentarios en tareas, Generación de reportes PDF, Carga de imágenes</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -73,9 +140,19 @@
         <div class="media-placeholder">[Image: Sketch-to-dress example]</div>
         <div class="desc">
           <h3 data-i18n="thesis_title">Tesis: Boceto a Vestido con Modelos Generativos</h3>
-          <p data-i18n="thesis_desc">Comparación de Pix2Pix, CycleGAN, ControlNet, BBDM, DDIM y VQGan para traducir bocetos a vestidos reales. Métricas: FID, LPIPS, SSIM.</p>
+          <p class="project-description" data-i18n-enhanced="thesis_enhanced_desc">Esta tesis presenta una visión
+            creativa y multimodal para la IA, enfocándose en la transferencia de conocimiento de bocetos a imágenes
+            realistas de vestidos. El trabajo explora el uso del dibujo como forma creativa de evaluación de modelos,
+            comparando varios enfoques generativos incluyendo Pix2Pix, CycleGAN, ControlNet, BBDM, DDIM y VQGan.</p>
+          <div class="project-details">
+            <div class="detail-section">
+              <p class="detail-label" data-i18n-github="thesis_github_ref">Versión completa disponible en el repositorio
+                GitHub: AnabalonJT/latex-doc</p>
+            </div>
+          </div>
           <div class="media-placeholder">[Chart: Model metrics]</div>
-          <a href="ing_dissertation_file.file.94510f77f6af5cd8.6d656d6f7269612e706466.pdf" target="_blank" data-i18n="thesis_link">Ver Tesis (PDF)</a>
+          <a href="ing_dissertation_file.file.94510f77f6af5cd8.6d656d6f7269612e706466.pdf" target="_blank"
+            class="thesis-link" data-i18n="thesis_link">Ver Tesis (PDF)</a>
         </div>
       </div>
     </section>
@@ -93,6 +170,31 @@
   <footer>
     <p>&copy; 2025 José Tomás Anabalón Díaz</p>
   </footer>
+
+  <!-- Image Modal -->
+  <div id="imageModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-carousel">
+          <button class="modal-nav modal-prev" aria-label="Previous image">&#8249;</button>
+          <img id="modalImage" src="" alt="" class="modal-image">
+          <button class="modal-nav modal-next" aria-label="Next image">&#8250;</button>
+        </div>
+        <div class="modal-dots-container">
+          <!-- Dots will be generated dynamically -->
+        </div>
+      </div>
+      <div class="modal-footer">
+        <p id="modalImageInfo" class="modal-image-info"></p>
+        <p id="modalImageDescription" class="modal-image-description"></p>
+      </div>
+    </div>
+  </div>
+
   <script src="./script.js"></script>
 </body>
+
 </html>
