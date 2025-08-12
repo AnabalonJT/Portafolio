@@ -252,23 +252,68 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize modal manager first
     try {
       console.log('Attempting to initialize ModalManager...');
-      modalManager = new ModalManager();
-      console.log('ModalManager initialized successfully:', !!modalManager);
+      console.log('ModalManager class exists:', typeof ModalManager);
+      if (typeof ModalManager === 'function') {
+        modalManager = new ModalManager();
+        console.log('ModalManager initialized successfully:', !!modalManager);
+      } else {
+        console.error('ModalManager class not found');
+      }
     } catch (error) {
       console.error('Error initializing modal manager:', error);
     }
     
     // Then initialize project carousels
-    initializeProjectCarousels();
+    try {
+      console.log('Attempting to initialize project carousels...');
+      console.log('initializeProjectCarousels function exists:', typeof initializeProjectCarousels);
+      if (typeof initializeProjectCarousels === 'function') {
+        initializeProjectCarousels();
+        console.log('Project carousels initialized');
+      } else {
+        console.error('initializeProjectCarousels function not found');
+      }
+    } catch (error) {
+      console.error('Error initializing project carousels:', error);
+    }
     
     // Preload all project images
-    preloadAllProjectImages();
+    try {
+      console.log('Attempting to preload images...');
+      preloadAllProjectImages();
+      console.log('Image preloading started');
+    } catch (error) {
+      console.error('Error preloading images:', error);
+    }
     
     // Verify translations in development
     if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
       verifyTranslations();
     }
 });
+
+// Fallback initialization in case DOMContentLoaded doesn't fire properly
+setTimeout(() => {
+  if (!modalManager) {
+    console.log('Fallback initialization triggered');
+    try {
+      modalManager = new ModalManager();
+      console.log('Fallback ModalManager initialized');
+    } catch (error) {
+      console.error('Fallback ModalManager initialization failed:', error);
+    }
+  }
+  
+  if (Object.keys(carouselInstances).length === 0) {
+    console.log('Fallback carousel initialization triggered');
+    try {
+      initializeProjectCarousels();
+      console.log('Fallback carousels initialized');
+    } catch (error) {
+      console.error('Fallback carousel initialization failed:', error);
+    }
+  }
+}, 2000);
 
 // Carousel Manager Class
 class CarouselManager {
@@ -1231,6 +1276,33 @@ function verifyTranslations() {
 
 // Set default language
 setLanguage('es');
+
+// Log that script is fully loaded
+console.log('Script fully loaded and ready');
+
+// Diagnostic function for debugging
+window.diagnosePortfolio = function() {
+  console.log('=== PORTFOLIO DIAGNOSTIC ===');
+  console.log('modalManager exists:', !!modalManager);
+  console.log('ModalManager class exists:', typeof ModalManager);
+  console.log('CarouselManager class exists:', typeof CarouselManager);
+  console.log('initializeProjectCarousels function exists:', typeof initializeProjectCarousels);
+  console.log('projectsData exists:', !!projectsData);
+  console.log('carouselInstances:', carouselInstances);
+  console.log('Number of carousel instances:', Object.keys(carouselInstances).length);
+  
+  // Check if modal HTML exists
+  const modal = document.getElementById('imageModal');
+  console.log('Modal HTML exists:', !!modal);
+  
+  // Check if project containers exist
+  const gestionContainer = document.getElementById('carousel-gestiontareas');
+  const ecomContainer = document.getElementById('carousel-ecommerce');
+  console.log('Gestion container exists:', !!gestionContainer);
+  console.log('Ecommerce container exists:', !!ecomContainer);
+  
+  console.log('=== END DIAGNOSTIC ===');
+};
 
 // Contact form handler with Formspree
 const form = document.getElementById('contact-form');
