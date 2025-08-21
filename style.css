@@ -122,6 +122,7 @@ section {
 }
 
 /* Ensure carousel containers fit properly in project grid */
+.carousel-container,
 .project .carousel-wrapper {
   min-height: 180px;
   margin-bottom: 0.5rem;

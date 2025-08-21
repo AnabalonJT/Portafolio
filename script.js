@@ -8,7 +8,21 @@ let currentLang = 'es'; // Default language
 const projectsData = {
   mtco: {
     id: 'mtco',
-    images: [], // Will be populated when images are available
+    images: ['mtco.cl_.png', 'artista.png', 'cuidados.png', 'mtco.cl_cotiza.png'],
+    imageDescriptions: {
+      es: {
+        'mtco.cl_.png': 'Página principal del estudio de tatuajes con información relevante, video de fondo y diseño atractivo',
+        'artista.png': 'Sección de artistas mostrando los tatuadores y piercers que trabajan en el estudio con información de contacto y portafolio',
+        'cuidados.png': 'Página de cuidados para tatuajes, piercings y láser con contenido que se actualiza según la selección del usuario',
+        'mtco.cl_cotiza.png': 'Formulario de cotización que permite a los clientes describir su proyecto, incluye funcionalidad de drag and drop para imágenes'
+      },
+      en: {
+        'mtco.cl_.png': 'Main page of the tattoo studio with relevant information, background video and attractive design',
+        'artista.png': 'Artists section showing tattoo artists and piercers working at the studio with contact information and portfolio',
+        'cuidados.png': 'Care page for tattoos, piercings and laser with content that updates based on user selection',
+        'mtco.cl_cotiza.png': 'Quote form that allows clients to describe their project, includes drag and drop functionality for images'
+      }
+    },
     technologies: ['HTML5', 'CSS3', 'JavaScript', 'Hostinger'],
     scope: 'Landing page profesional para estudio de tatuajes',
     features: ['Diseño responsivo', 'Formulario de contacto', 'Optimización SEO', 'Hospedaje en Hostinger'],
