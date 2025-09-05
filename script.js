@@ -30,7 +30,31 @@ const projectsData = {
   },
   makimotion: {
     id: 'makimotion',
-    images: [], // MakiMotion folder exists but is empty
+    images: ['login.png', 'dashboard.png', 'paciente.png', 'Pacientes.png', 'editar ficha clinica.png', 'editar paciente.png', 'eeditar evaluacion.png', 'fichas clinicas de un paciente.png', 'delete paciente.png'],
+    imageDescriptions: {
+      es: {
+        'login.png': 'Pantalla de inicio de sesión para acceder al sistema. Para obtener acceso contactar al email del footer',
+        'dashboard.png': 'Dashboard principal mostrando pacientes no dados de alta con información básica como edad, embarazo, y evaluaciones recientes. Al pasar el mouse sobre un paciente se muestra información adicional',
+        'paciente.png': 'Vista detallada de un paciente específico con descripción de últimas fichas clínicas y evaluaciones más recientes',
+        'Pacientes.png': 'Tabla completa de todos los pacientes (dados de alta y activos) con información detallada y funcionalidad de búsqueda',
+        'editar ficha clinica.png': 'Formulario de edición de fichas clínicas mostrando todos los campos disponibles para completar',
+        'editar paciente.png': 'Formulario para editar información personal y médica de un paciente existente',
+        'eeditar evaluacion.png': 'Formulario de edición de evaluaciones médicas con campos específicos de seguimiento',
+        'fichas clinicas de un paciente.png': 'Vista de todas las fichas clínicas históricas de un paciente específico organizadas cronológicamente',
+        'delete paciente.png': 'Pantalla de confirmación para eliminar pacientes con advertencias sobre evaluaciones y fichas clínicas asociadas'
+      },
+      en: {
+        'login.png': 'Login screen to access the system. To obtain access contact the email in the footer',
+        'dashboard.png': 'Main dashboard showing non-discharged patients with basic information like age, pregnancy status, and recent evaluations. Hovering over a patient shows additional information',
+        'paciente.png': 'Detailed view of a specific patient with description of latest clinical records and most recent evaluations',
+        'Pacientes.png': 'Complete table of all patients (discharged and active) with detailed information and search functionality',
+        'editar ficha clinica.png': 'Clinical record editing form showing all available fields to complete',
+        'editar paciente.png': 'Form to edit personal and medical information of an existing patient',
+        'eeditar evaluacion.png': 'Medical evaluation editing form with specific follow-up fields',
+        'fichas clinicas de un paciente.png': 'View of all historical clinical records of a specific patient organized chronologically',
+        'delete paciente.png': 'Patient deletion confirmation screen with warnings about associated evaluations and clinical records'
+      }
+    },
     technologies: ['Django', 'Python', 'HTML5', 'CSS3', 'JavaScript', 'SQLite'],
     scope: 'Aplicación web para gestión de pacientes médicos',
     features: ['Dashboard personalizado', 'Gestión de citas', 'Resúmenes de pacientes', 'Acceso rápido a información médica']
