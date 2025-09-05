@@ -121,6 +121,106 @@ section {
   overflow: hidden;
 }
 
+/* AI Sketch-to-Dress Image Styling */
+.ai-example-image {
+  width: 100%;
+  margin: 1rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #2a2a2a;
+  border: 2px solid #444;
+}
+
+.sketch-dress-image {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  max-width: 100%;
+  object-fit: contain;
+  background: #2a2a2a;
+  border-radius: 6px;
+  display: block;
+  margin: 0 auto;
+}
+
+.image-placeholder {
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+  border-radius: 8px;
+  border: 2px dashed #555;
+}
+
+.placeholder-content {
+  text-align: center;
+  color: #888;
+  padding: 2rem;
+}
+
+.placeholder-content h4 {
+  color: #ffd600;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.placeholder-content p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Responsive adjustments for vertical AI image */
+@media (max-width: 700px) {
+  .ai-example-image {
+    margin: 0.75rem 0;
+  }
+  
+  .sketch-dress-image {
+    max-height: 350px;
+  }
+  
+  .placeholder-content {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .sketch-dress-image {
+    max-height: 300px;
+  }
+  
+  .placeholder-content {
+    padding: 1rem;
+  }
+  
+  .placeholder-content h4 {
+    font-size: 1rem;
+  }
+  
+  .placeholder-content p {
+    font-size: 0.85rem;
+  }
+}
+
+/* Metrics Chart Styling */
+.metrics-chart {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 6px;
+  background: #fff;
+  padding: 10px;
+}
+
+.ai-project .media-placeholder {
+  min-height: 200px;
+  background: #2a2a2a;
+}
+
 /* Ensure carousel containers fit properly in project grid */
 .carousel-container,
 .project .carousel-wrapper {
