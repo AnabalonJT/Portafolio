@@ -145,7 +145,7 @@ const translations = {
     gardener_features: "Features: User management, Material system, Task comments, PDF report generation, Image uploads",
     
     thesis_title: "Thesis: Sketch-to-Dress with Generative Models",
-    thesis_desc: "Creative approach to multimodal AI focusing on knowledge transfer from sketches to realistic dress images. Explores drawing as a creative form of model evaluation using various generative models.",
+    thesis_desc: "Creative approach to AI focusing on knowledge transfer from sketches to realistic dress images. Explores drawing as a creative form of model evaluation using various generative models.",
     thesis_enhanced_desc: "This thesis presents a creative and multimodal vision for AI, focusing on the transfer of knowledge from sketches to realistic images of dresses. The work explores the use of drawing as a creative form of model evaluation, comparing various generative approaches including Pix2Pix, CycleGAN, ControlNet, BBDM, DDIM, and VQGan.",
     thesis_github_ref: "Complete version available at GitHub repository: AnabalonJT/latex-doc",
     thesis_link: "View Thesis (PDF)",
@@ -185,8 +185,8 @@ const translations = {
     gardener_features: "Características: Gestión de usuarios, Sistema de materiales, Comentarios en tareas, Generación de reportes PDF, Carga de imágenes",
     
     thesis_title: "Tesis: Boceto a Vestido con Modelos Generativos",
-    thesis_desc: "Enfoque creativo hacia la IA multimodal enfocado en la transferencia de conocimiento de bocetos a imágenes realistas de vestidos. Explora el dibujo como forma creativa de evaluación de modelos usando varios modelos generativos.",
-    thesis_enhanced_desc: "Esta tesis presenta una visión creativa y multimodal para la IA, enfocándose en la transferencia de conocimiento de bocetos a imágenes realistas de vestidos. El trabajo explora el uso del dibujo como forma creativa de evaluación de modelos, comparando varios enfoques generativos incluyendo Pix2Pix, CycleGAN, ControlNet, BBDM, DDIM y VQGan.",
+    thesis_desc: "Enfoque creativo hacia la IA enfocado en la transferencia de conocimiento de bocetos a imágenes realistas de vestidos. Explora el dibujo como forma creativa de evaluación de modelos usando varios modelos generativos.",
+    thesis_enhanced_desc: "Esta tesis presenta una visión creativa y multimodal para la IA, enfocándose en la transferencia de conocimiento de bocetos a imágenes realistas de vestidos. El trabajo explora el uso del dibujo como forma creativa de evaluación de modelos, comparando varios enfoques generativos incluyendo Pix2Pix, CycleGAN, ControlNet, BBDM, DDIM y VQGan + Transformers.",
     thesis_github_ref: "Versión completa disponible en el repositorio GitHub: AnabalonJT/latex-doc",
     thesis_link: "Ver Tesis (PDF)",
     send: "Enviar",
