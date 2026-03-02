@@ -135,25 +135,38 @@
       </div>
     </section>
     <section id="ai">
-      <h2 data-i18n="ai">AI</h2>
-      <div class="ai-project">
-        <div class="ai-example-image">
-          <img src="images/sketch-to-dress.png" alt="Ejemplo de transformación de boceto a vestido" class="sketch-dress-image" onerror="this.parentElement.innerHTML='<div class=&quot;image-placeholder&quot;><div class=&quot;placeholder-content&quot;><h4>Sketch-to-Dress Example</h4><p>Transformación de bocetos a vestidos usando IA generativa</p></div></div>'">
-        </div>
+      <h2 data-i18n="ai">IA y Automatización</h2>
+      
+      <!-- Automation Project -->
+      <div class="project">
+        <div id="carousel-automation" class="carousel-container"></div>
         <div class="desc">
-          <h3 data-i18n="thesis_title">Tesis: Boceto a Vestido con Modelos Generativos</h3>
-          <p class="project-description" data-i18n-enhanced="thesis_enhanced_desc">Esta tesis presenta una visión
-            creativa  para la IA, enfocándose en la transferencia de conocimiento de bocetos a imágenes
-            realistas de vestidos. El trabajo explora el uso del dibujo como forma creativa de evaluación de modelos,
-            comparando varios enfoques generativos incluyendo Pix2Pix, CycleGAN, ControlNet, BBDM, DDIM y VQGan + Transformers.</p>
+          <h3 data-i18n="automation_title">Automatización de Postulaciones Laborales</h3>
+          <p class="project-description" data-i18n-desc="automation_desc">Sistema completo de automatización para postulaciones laborales usando workflows de n8n, web scraping con Selenium, scripts Python en Flask, e IA para respuestas contextuales. Gestión organizada de datos con Google Sheets y notificaciones por Telegram con métricas de rendimiento.</p>
           <div class="project-details">
             <div class="detail-section">
-              <p class="detail-label" data-i18n-github="thesis_github_ref">Versión completa disponible en el repositorio
-                GitHub: AnabalonJT/latex-doc</p>
+              <p class="detail-label" data-i18n-tech="automation_technologies">Tecnologías: n8n, Python, Selenium, Flask, OpenRouter AI, Google Sheets, Telegram API</p>
+            </div>
+            <div class="detail-section">
+              <p class="detail-label" data-i18n-scope="automation_scope">Alcance: Sistema completo de automatización para postulaciones laborales</p>
+            </div>
+            <div class="detail-section">
+              <p class="detail-label" data-i18n-features="automation_features">Características: Automatización con n8n, Web scraping con Selenium, Respuestas IA contextuales, Gestión Google Sheets, Notificaciones Telegram, Métricas de rendimiento</p>
             </div>
           </div>
-          <div class="media-placeholder">
-            <img src="images/Metricas.png" alt="Métricas de modelos de IA - FID, LPIPS, SSIM" class="metrics-chart">
+        </div>
+      </div>
+      
+      <!-- Thesis Project -->
+      <div class="ai-project">
+        <div id="carousel-thesis" class="carousel-container"></div>
+        <div class="desc">
+          <h3 data-i18n="thesis_title">Tesis: Boceto a Vestido con Modelos Generativos</h3>
+          <p class="project-description" data-i18n-enhanced="thesis_enhanced_desc">Esta tesis presenta una visión creativa y multimodal para la IA, enfocándose en la transferencia de conocimiento de bocetos a imágenes realistas de vestidos. El trabajo explora el uso del dibujo como forma creativa de evaluación de modelos, comparando varios enfoques generativos incluyendo Pix2Pix, CycleGAN, ControlNet, BBDM, DDIM y VQGan + Transformers.</p>
+          <div class="project-details">
+            <div class="detail-section">
+              <p class="detail-label" data-i18n-github="thesis_github_ref">Versión completa disponible en el repositorio GitHub: AnabalonJT/latex-doc</p>
+            </div>
           </div>
           <a href="memoria.pdf" target="_blank"
             class="thesis-link" data-i18n="thesis_link">Ver Tesis (PDF)</a>

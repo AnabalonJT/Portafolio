@@ -108,6 +108,44 @@ const projectsData = {
     technologies: ['WordPress', 'WooCommerce', 'PHP', 'MySQL', 'Hostinger'],
     scope: 'Tienda en línea completa con gestión de productos',
     features: ['Catálogo de productos', 'Carrito de compras', 'Gestión de pedidos', 'Panel de administración', 'Páginas informativas']
+  },
+  automation: {
+    id: 'automation',
+    images: ['workflow_n8n.png', 'google_sheets.png', 'telegram.jpeg', 'openrouter.png'],
+    imageDescriptions: {
+      es: {
+        'workflow_n8n.png': 'Workflow de automatización en n8n que gestiona todo el proceso de postulaciones laborales',
+        'google_sheets.png': 'Tabla de Google Sheets con postulaciones y sus estados, URLs y detalles de seguimiento',
+        'telegram.jpeg': 'Notificación de Telegram mostrando métricas finales: postulaciones procesadas, exitosas, que requieren revisión manual, no disponibles y errores, con estadísticas de uso de IA y notas de atención manual',
+        'openrouter.png': 'Dashboard de OpenRouter mostrando consumo de tokens por modelo y los diferentes modelos de IA probados'
+      },
+      en: {
+        'workflow_n8n.png': 'n8n automation workflow that manages the entire job application process',
+        'google_sheets.png': 'Google Sheets table with applications and their status, URLs and tracking details',
+        'telegram.jpeg': 'Telegram notification showing final metrics: processed applications, successful, requiring manual review, unavailable and errors, with AI usage statistics and manual attention notes',
+        'openrouter.png': 'OpenRouter dashboard showing token consumption by model and the different AI models tested'
+      }
+    },
+    technologies: ['n8n', 'Python', 'Selenium', 'Flask', 'OpenRouter AI', 'Google Cloud API', 'Telegram Bot API'],
+    scope: 'Sistema de automatización completo para postulaciones laborales',
+    features: ['Automatización con n8n', 'Web scraping con Selenium', 'IA para respuestas contextuales', 'Integración Google Cloud API', 'Notificaciones por Telegram', 'Métricas de rendimiento']
+  },
+  thesis: {
+    id: 'thesis',
+    images: ['sketch-to-dress.png', 'Metricas.png'],
+    imageDescriptions: {
+      es: {
+        'sketch-to-dress.png': 'Ejemplo de transformación de boceto a vestido usando modelos generativos de IA',
+        'Metricas.png': 'Métricas de comparación entre diferentes modelos generativos (FID, LPIPS, SSIM)'
+      },
+      en: {
+        'sketch-to-dress.png': 'Example of sketch-to-dress transformation using generative AI models',
+        'Metricas.png': 'Comparison metrics between different generative models (FID, LPIPS, SSIM)'
+      }
+    },
+    technologies: ['Python', 'PyTorch', 'Pix2Pix', 'CycleGAN', 'ControlNet', 'BBDM', 'DDIM', 'VQGan'],
+    scope: 'Investigación en modelos generativos para transformación de imágenes',
+    features: ['Comparación de modelos', 'Evaluación con métricas FID/LPIPS/SSIM', 'Enfoque creativo multimodal', 'Transferencia de conocimiento']
   }
 };
 
@@ -118,7 +156,7 @@ const translations = {
     patient_title: "Patient Management App - MakiMotion",
     gardener_title: "Task Management App",
     webapps: "Web Applications",
-    ai: "AI",
+    ai: "AI & Automation",
     contact: "Contact",
     name: "José Tomás Anabalón Díaz",
     about: "Computer Science Engineer. Passionate about artificial intelligence and software development, with experience in generative models, full stack development, and data analysis.",
@@ -148,6 +186,13 @@ const translations = {
     thesis_desc: "Creative approach to AI focusing on knowledge transfer from sketches to realistic dress images. Explores drawing as a creative form of model evaluation using various generative models.",
     thesis_enhanced_desc: "This thesis presents a creative and multimodal vision for AI, focusing on the transfer of knowledge from sketches to realistic images of dresses. The work explores the use of drawing as a creative form of model evaluation, comparing various generative approaches including Pix2Pix, CycleGAN, ControlNet, BBDM, DDIM, and VQGan.",
     thesis_github_ref: "Complete version available at GitHub repository: AnabalonJT/latex-doc",
+    
+    automation_title: "Job Application Automation",
+    automation_desc: "Complete automation system for job applications using n8n workflows, Selenium web scraping, Python Flask scripts, and AI for contextual responses. Organized data management with Google Cloud API and Telegram notifications with performance metrics.",
+    automation_technologies: "Technologies: n8n, Python, Selenium, Flask, OpenRouter AI, Google Cloud API, Telegram Bot API",
+    automation_scope: "Scope: Complete automation system for job applications",
+    automation_features: "Features: n8n automation, Selenium web scraping, Contextual AI responses, Google Cloud API integration, Telegram notifications, Performance metrics",
+    
     thesis_link: "View Thesis (PDF)",
     send: "Send",
     click_to_view: "Click to view images"
@@ -158,7 +203,7 @@ const translations = {
     patient_title: "App de Gestión de Pacientes - MakiMotion",
     gardener_title: "App de Gestión de Tareas",
     webapps: "Aplicaciones Web",
-    ai: "IA",
+    ai: "IA y Automatización",
     contact: "Contacto",
     name: "José Tomás Anabalón Díaz",
     about: "Ingeniero en ciencias de la computación. Apasionado por la inteligencia artificial y el desarrollo de software, con experiencia en modelos generativos, desarrollo full stack y análisis de datos.",
@@ -188,6 +233,13 @@ const translations = {
     thesis_desc: "Enfoque creativo hacia la IA enfocado en la transferencia de conocimiento de bocetos a imágenes realistas de vestidos. Explora el dibujo como forma creativa de evaluación de modelos usando varios modelos generativos.",
     thesis_enhanced_desc: "Esta tesis presenta una visión creativa y multimodal para la IA, enfocándose en la transferencia de conocimiento de bocetos a imágenes realistas de vestidos. El trabajo explora el uso del dibujo como forma creativa de evaluación de modelos, comparando varios enfoques generativos incluyendo Pix2Pix, CycleGAN, ControlNet, BBDM, DDIM y VQGan + Transformers.",
     thesis_github_ref: "Versión completa disponible en el repositorio GitHub: AnabalonJT/latex-doc",
+    
+    automation_title: "Automatización de Postulaciones Laborales",
+    automation_desc: "Sistema completo de automatización para postulaciones laborales usando workflows de n8n, web scraping con Selenium, scripts Python en Flask, e IA para respuestas contextuales. Gestión organizada de datos con Google Cloud API y notificaciones por Telegram con métricas de rendimiento.",
+    automation_technologies: "Tecnologías: n8n, Python, Selenium, Flask, OpenRouter AI, Google Cloud API, Telegram Bot API",
+    automation_scope: "Alcance: Sistema completo de automatización para postulaciones laborales",
+    automation_features: "Características: Automatización con n8n, Web scraping con Selenium, Respuestas IA contextuales, Integración Google Cloud API, Notificaciones Telegram, Métricas de rendimiento",
+    
     thesis_link: "Ver Tesis (PDF)",
     send: "Enviar",
     click_to_view: "Click para ver imágenes"
@@ -841,10 +893,12 @@ function getProjectImagesPath(projectId) {
 // Helper function to get correct folder name for each project
 function getProjectFolderName(projectId) {
   const folderMap = {
-    'mtco': 'mtco', // Will be created when images are available
+    'mtco': 'mtco',
     'makimotion': 'MakiMotion',
     'gestiontareas': 'GestionTareas', 
-    'ecommerce': 'Ecommerce'
+    'ecommerce': 'Ecommerce',
+    'automation': 'Automatation',
+    'thesis': '.' // Images are in the root images folder
   };
   return folderMap[projectId] || projectId;
 }
@@ -1135,10 +1189,12 @@ function initializeProjectCarousels() {
 // Function to get appropriate placeholder text for each project
 function getPlaceholderText(projectId) {
   const placeholders = {
-    'mtco': '[Video: mtco.cl landing page]',
+    'mtco': '[Screenshots: mtco.cl landing page]',
     'makimotion': '[Screenshots: Patient management app]',
     'gestiontareas': 'Task Management Screenshots',
-    'ecommerce': 'E-commerce Screenshots'
+    'ecommerce': 'E-commerce Screenshots',
+    'automation': '[Screenshots: Automation workflow]',
+    'thesis': '[Images: Thesis examples and metrics]'
   };
   
   return placeholders[projectId] || `[${projectId} media]`;
