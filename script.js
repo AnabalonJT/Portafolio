@@ -1157,7 +1157,7 @@ function initializeProjectCarousels() {
         carouselInstances[projectId] = new CarouselManager(containerId, imagePaths);
         
         // Add click listener to the entire project div
-        const projectDiv = container.closest('.project');
+        const projectDiv = container.closest('.project') || container.closest('.ai-project');
         if (projectDiv && modalManager) {
           projectDiv.style.cursor = 'pointer';
           projectDiv.setAttribute('data-click-text', translations[currentLang]['click_to_view']);
